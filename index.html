@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Imagens</title>
+</head>
+<body>
+    <h1>Gerador de Imagens com Prompt</h1>
+    <form action="/generate-image/" method="post">
+        <label for="prompt">Digite seu prompt:</label>
+        <input type="text" id="prompt" name="prompt" required>
+        <button type="submit">Gerar Imagem</button>
+    </form>
+    <h2>Imagem Gerada:</h2>
+    <img src="{{ image }}" alt="Imagem Gerada">
+</body>
+</html>
